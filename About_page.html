@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="favicon-32x32.png"
+      type="image/png"
+    />
+    <title>About IP Subnet Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>About IP Subnet Calculator</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About_page.html">About</a></li>
+          <li><a href="Contact_page.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>What is Subnetting?</h2>
+      <p>
+        Subnetting is the process of dividing a single physical network into
+        multiple logical sub-networks. It enhances network performance and
+        security by segregating traffic and reducing congestion. By breaking
+        down a large network into smaller, manageable pieces, subnetting allows
+        for better organization and more efficient use of IP addresses.
+      </p>
+
+      <h2>IP Address Classes</h2>
+      <h3>Class A</h3>
+      <p>
+        Class A IP addresses are used for large networks. The first octet ranges
+        from 1 to 126, allowing for 128 networks with up to 16 million hosts
+        each. The default subnet mask is 255.0.0.0 (/8).
+      </p>
+      <strong>Example:</strong> 10.0.0.1
+      <h4>Calculating Class A Subnets:</h4>
+      <ul>
+        <li>First Octet: 1 to 126</li>
+        <li>Subnet Mask: /8 (255.0.0.0)</li>
+        <li>Total Hosts: 2^(32-8) - 2 = 16,777,214 usable IPs</li>
+      </ul>
+
+      <h3>Class B</h3>
+      <p>
+        Class B IP addresses are used for medium to large networks. The first
+        octet ranges from 128 to 191, allowing for 16,384 networks with up to
+        65,534 hosts each. The default subnet mask is 255.255.0.0 (/16).
+      </p>
+      <strong>Example:</strong> 172.16.0.1
+      <h4>Calculating Class B Subnets:</h4>
+      <ul>
+        <li>First Octet: 128 to 191</li>
+        <li>Subnet Mask: /16 (255.255.0.0)</li>
+        <li>Total Hosts: 2^(32-16) - 2 = 65,534 usable IPs</li>
+      </ul>
+
+      <h3>Class C</h3>
+      <p>
+        Class C IP addresses are used for small networks. The first octet ranges
+        from 192 to 223, allowing for 2,097,152 networks with up to 254 hosts
+        each. The default subnet mask is 255.255.255.0 (/24).
+      </p>
+      <strong>Example:</strong> 192.168.1.1
+      <h4>Calculating Class C Subnets:</h4>
+      <ul>
+        <li>First Octet: 192 to 223</li>
+        <li>Subnet Mask: /24 (255.255.255.0)</li>
+        <li>Total Hosts: 2^(32-24) - 2 = 254 usable IPs</li>
+      </ul>
+
+      <h2>Theory Behind Subnetting</h2>
+      <p>
+        Each IP address consists of two main components: the network part and
+        the host part. The subnet mask determines how many bits are allocated to
+        each part. By using a subnet mask, you can define the network size and
+        the number of hosts it can support.
+      </p>
+      <p>
+        The total number of hosts in a subnet can be calculated using the
+        formula:
+        <strong>2^(32 - subnet bits) - 2</strong>
+        (the "-2" accounts for the network and broadcast addresses).
+      </p>
+      <p>
+        Subnetting allows for better management of IP address space and improves
+        security by isolating segments of the network, thereby limiting the
+        scope of broadcast traffic and potential security breaches.
+      </p>
+
+      <h2>Why Use Subnetting?</h2>
+      <p>Subnetting helps in:</p>
+      <ul>
+        <li>Efficient use of IP addresses</li>
+        <li>Improving network performance and security</li>
+        <li>Organizing networks for easier management</li>
+        <li>Isolating network segments to contain broadcast traffic</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 All rights reserved.</p>
+      <p>
+        Contact us:
+        <a href="mailto:sumanthm423@gmail.com">sumanthm423@gmail.com</a>
+      </p>
+      <p>
+        Follow us on <a href="https://x.com/Suman_s_a_m">X</a> |
+        <a href="https://www.linkedin.com/in/sumanth321/">linkedln</a> |
+        <a href="https://github.com/sumansam312">Github</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
