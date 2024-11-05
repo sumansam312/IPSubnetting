@@ -107,12 +107,12 @@ This Subnetting Calculator takes an IP Address and Subnet Mask as input, then pe
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/subnetting-calculator.git
+git clone https://github.com/sumansam312/IPSubnetting.git
 ```
 
 ## Navigate to the project directory:
 ```bash
-cd subnetting-calculator
+cd IPSubnetting
 ```
 Open the index.html file in your browser:
 Simply open the index.html file in your browser to start using the Subnetting Calculator.
